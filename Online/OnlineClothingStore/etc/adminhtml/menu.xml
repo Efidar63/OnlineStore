@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Online_OnlineClothingStore::product" title="PRODUCT" module="Online_OnlineClothingStore" sortOrder="50" resource="Online_OnlineClothingStore::product" />
+        <add id="Online_OnlineClothingStore::products" title="Products" module="Online_OnlineClothingStore" sortOrder="10" parent="Online_OnlineClothingStore::product" resource="Online_OnlineClothingStore::product" action="Product/Index"/>
+    </menu>
+</config>

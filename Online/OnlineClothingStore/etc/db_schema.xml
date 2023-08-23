@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="onlineclothingstore_products" resource="default" engine="innodb" comment="Online Clothing Store Products">
+        <column xsi:type="int" name="product_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Product ID"/>
+       <column xsi:type="int" name="product_user_id" padding="10" unsigned="true" nullable="false" comment="User ID"/>
+        <column xsi:type="varchar" name="product_name" nullable="false" length="100" comment="Product Name"/>
+        <column xsi:type="varchar" name="product_description" nullable="false" length="255" comment="Product Description"/>
+        <column xsi:type="decimal" name="product_price" scale="2" precision="10" nullable="false" comment="Product Price"/>
+        <column xsi:type="int" name="product_stock" padding="10" unsigned="true" nullable="false" comment="Product Stock"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" nullable="true" default="NULL" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="product_id"/>
+        </constraint>
+    </table>
+</schema>
