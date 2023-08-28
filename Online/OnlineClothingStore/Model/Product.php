@@ -7,6 +7,6 @@ class Product extends AbstractModel
 {
     protected function _construct()
     {
-        $this->_init('OnlineClothingStore\Model\ResourceModel\Product');
+        $this->_init('Online\OnlineClothingStore\Model\ResourceModel\Product');
     }
 }
